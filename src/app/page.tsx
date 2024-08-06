@@ -1,5 +1,6 @@
 import { Icons } from "@/components/Icons";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { Reviews } from "@/components/Reviews";
 import WallFrame from "@/components/WallFrame";
 import { Check, Star } from "lucide-react";
 import Image from "next/image";
@@ -86,11 +87,43 @@ export default function Home() {
               <p>I am so impressed with Framestitch's custom photo frames. <span className="font-semibold text-green-400">The frames are gorgeous</span>, and the images look amazing. The service was fast and reliable, with <span className="font-semibold text-green-400">excellent attention to detail</span>. Highly recommend for anyone wanting to personalize their space!"</p> 
             </div>
             <div className="flex gap-4 mt-2">
-              <img className="rounded h-12 w-12 object-cover" src=""/>
+              <img className="rounded-full h-12 w-12 object-cover ring-2 ring-green-200" src="/user5.jpg"/>
+              <div className="flex flex-col">
+                <p className="font-bold">Maria</p>
+                <div className="flex items-center text-zinc-600">
+                  <Check className="h-5 w-5 stroke-[3px] text-green-400"/>
+                  <p className="text-sm">Verified purchase</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col flex-auto gap-4 lg:pr-8 xl:pr-20">
+            <div className="flex gap-0.5 mb-2">
+            <Star className="h-5 w-5 text-yellow-500 fill-yellow-400"/>
+            <Star className="h-5 w-5 text-yellow-500 fill-yellow-400"/>
+            <Star className="h-5 w-5 text-yellow-500 fill-yellow-400"/>
+            <Star className="h-5 w-5 text-yellow-500 fill-yellow-400"/>
+            <Star className="h-5 w-5 text-yellow-500 fill-yellow-400"/>
+            </div>
+            <div className="text-lg leading-8">
+              <p>Framestitch provided me with beautiful custom frames that exceeded my expectations.<span className="font-semibold text-green-400">The quality of the prints and frames is top-notch.</span>, The process was easy, and delivery was prompt. These frames have added a personal touch to my home!""</p> 
+            </div>
+            <div className="flex gap-4 mt-2">
+              <img className="rounded-full h-12 w-12 object-cover ring-2 ring-green-200" src="/user3.jpg"/>
+              <div className="flex flex-col">
+                <p className="font-bold">Edwarodoo</p>
+                <div className="flex items-center text-zinc-600">
+                  <Check className="h-5 w-5 stroke-[3px] text-green-400"/>
+                  <p className="text-sm">Verified purchase</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </MaxWidthWrapper>
+      <div className="pt-16">
+      <Reviews/>
+      </div>
       </section>
     </div>
   );
