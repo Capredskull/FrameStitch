@@ -19,10 +19,10 @@ const Navbar = async ()=>{
           <div className="h-full flex items-center space-x-4">
             {user?(
                 <>
-                <Link href="/api/auth/logout" className={buttonVariants({size:'sm',variant:'ghost', className:'hover:bg-green-300'})}>
+                <Link href="/api/auth/logout" className={buttonVariants({size:'sm',variant:'ghost', className:'hover:bg-green-500'})}>
                 signout
                 </Link>
-               {isAdmin?<Link href="/api/auth/logout" className={buttonVariants({size:'sm',variant:'ghost',className:'hover:bg-green-300'})}>
+               {isAdmin?<Link href="/api/auth/logout" className={buttonVariants({size:'sm',variant:'ghost',className:'hover:bg-green-500'})}>
                 DashBoard
                 </Link>:null} 
                 <Link href="/configure/upload" className={buttonVariants({size:'sm',className:'hidden sm:flex items-center gap-1  hover:bg-green-500'})}>
@@ -31,10 +31,10 @@ const Navbar = async ()=>{
                 </Link>
                 </>
             ):<>
-            <Link href="/api/auth/register" className={buttonVariants({size:'sm',variant:'ghost', className:'hover:bg-green-300'})}>
+            <Link href="/api/auth/register" className={buttonVariants({size:'sm',variant:'ghost', className:'hover:bg-green-500'})}>
                 SignUp
                 </Link>
-              <Link href="/api/auth/login" className={buttonVariants({size:'sm',variant:'ghost', className:'hover:bg-green-300'})}>
+              <Link href="/api/auth/login" className={buttonVariants({size:'sm',variant:'ghost', className:'hover:bg-green500'})}>
                 Login
                 </Link>
                 <div className="h-8 w-px bg-zinc-400 hidden sm:block"/>

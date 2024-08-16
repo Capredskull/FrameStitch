@@ -163,7 +163,7 @@ export default function Home() {
           <div className="flex justify-center">
             <Link href="/configure/upload" className={buttonVariants({
               size:"lg",
-              className:"mx-auto mt-8"
+              className:"mx-auto mt-8 bg-green-500 hover:bg-green-800"
             })}>
               Create Now <ArrowRight className="h-4 w-4 ml-1.5"/>
             </Link>
